@@ -2,11 +2,12 @@
 <html>
 	<head>
 		<title>Resume</title>
-		<link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 		<style>
 			body {
-				font-family: 'Play';
+				font-family: 'Lato';
 				margin: 0.25in;
 				background: #f4f4f4;
 				color: #111;
@@ -33,6 +34,13 @@
 			}
 
 			header h1 {
+				background: 0% 30% url('http://amolife.com/image/images/stories/Animals/Cats/fluffy_cats_-(12).jpg');
+				background-size: cover;
+				-webkit-background-clip: text;
+				background-clip: text;
+
+				text-shadow: none;
+				color: rgba(0,0,0,0.2);
 				margin: 0;
 				padding: 0;
 				font-size: 4em;
@@ -104,6 +112,28 @@
 				font-size: 80%;
 			}
 
+			.social {
+				position: absolute;
+				top: 0.3in;
+				left: 0.3in;
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				font-size: 20pt;
+				text-align: left;
+				color: #aaa;
+			}
+
+			.fa-linkedin-square:hover { color: #007bb6; }
+			.fa-facebook-square:hover { color: #3b5998; }
+			.fa-github-square:hover   { color: #829aa8; }
+			.fa-stack-overflow:hover   { color: #f09000; }
+
+			@media screen {
+				.social span { display: none; } /* hide full social uris */
+			}
+
+
 		</style>
 	</head>
 	<body>
@@ -116,6 +146,33 @@
 				<a 
 	   href="email:lauren.kelley.scott@gmail.com">lauren.kelley.scott@gmail.com</a>
 			</p>
+			<ul class="social">
+				<li>
+					<a href="https://www.linkedin.com/profile/view?id=361359690" title="LinkedIn">
+						<i class="fa fa-linkedin-square"></i>
+						<span>https://www.linkedin.com/profile/view?id=361359690</span>
+					</a>
+				</li>
+				<li>
+					<a href="https://github.com/astirya" title="Github">
+						<i class="fa fa-github-square"></i>
+						<span>https://github,com/astirya</span>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.facebook.com/lauren.scott.35574" title="Facebook">
+						<i class="fa fa-facebook-square"></i>
+						<span>https://www.facebook.com/lauren.scott.35574</span>
+					</a>
+				</li>
+				<li>
+					<a href="http://stackoverflow.com/users/3438655/astirya" title="Stack Overflow">
+						<i class="fa fa-stack-overflow"></i>
+						<span>http://stackoverflow.com/users/3438655/astirya</span>
+					</a>
+				</li>
+
+			</ul>
 		</header>
 
 		<section class="profile">
