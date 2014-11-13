@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Resume</title>
+		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+		<style>
+			body {
+				font-family: 'Lato';
+				margin: 0.25in;
+				background: #f4f4f4;
+				color: #333;
+				text-shadow: -1pt -1pt 1px rgba(255, 255, 255, 1);
+			}
+
+			a {
+				color: inherit;
+				text-decoration: none;
+			}
+
+			header {
+				text-align: right;
+				font-size: 16pt;
+				margin-bottom: 3em;
+				color: #333;
+
+			}
+
+			header address {
+				font-style: normal;
+				font-size: 1em;
+			}
+
+			header h1 {
+				margin: 0;
+				padding: 0;
+				font-size: 4em;
+				word-spacing: 0.2em;
+				text-transform: uppercase;
+			}
+			header p {
+				margin: 0;
+				padding: 0;
+			}
+
+			body > section {
+				/*		background: linear-gradient(135deg, #fff 0, #f7f7f7 30%);
+			*/
+			}
+			section h2 {
+				margin: 0;
+				font-size: 9pt;
+				text-transform: uppercase;
+				width: 10%;
+				float: left;
+				font-size: 18pt;
+			}
+
+			section h3 {
+				margin: 0;
+				padding: 0;
+				font-size: 12pt;
+				float: left;
+				width: 18%;
+				text-align: right;
+			}
+
+			section > section:nth-of-type(even) h3 { color: rgb(26, 219, 109); }
+			section > section:nth-of-type(odd) h3 { color: rgb(0, 169, 208); }
+
+			section h4 {
+				margin: 0.5em;
+				margin-top: 2.5em;
+				margin-left: 20%;
+			}
+			section > section {
+				width: 85%;
+				margin-left: 15%;
+				margin-right: 0;
+			}
+			section > p {
+				margin: 1.5em 0.5em;
+				margin-left: 20%;
+				margin-right: 0;
+				line-height: 1.6em;
+				text-align: justify;
+			}
+			section > ul {
+				margin-left: 20%;
+				padding-left: 1.5em;
+			}
+
+			section li {
+				padding: 0.5em;
+				padding-right: 0;
+				line-height: 1.3em;
+			}
+
+			.technologies {
+				border-top: 1px solid rgb(26, 219, 109);
+				padding-top: 0.5em;
+				font-size: 80%;
+			}
+
+		</style>
+	</head>
+	<body>
+		<header>
+			<address>1234 Potato North, East Siberia, RF</address>
+			<h1>Lauren K Scott</h1>
+			<p>
+				<a href="tel:+15633495353">563.349.5343</a>
+				&mdash;
+				<a href="email:laurek">lauren.something@gmail.com</a>
+			</p>
+		</header>
+
+		<section class="profile">
+			<h2>Profile</h2>
+			<section class="one">
+				<p>
+					Lauren is a motivated, experienced developer with three years' expertise in creating
+					and maintaining embedded web applications on a Linux platform. She has many
+					years of hands-on Linux experience due to exclusively using command-line Linux on
+					her professional and personal computers. This experience has given her a wealth of
+					knowledge of the entire web stack: using Linux to develop event-driven, responsive web
+					applications with modern Javascript APIs, configuring web servers, handling requests
+					with RESTful, object-oriented PHP, and optimizing a SQL DB to serve responses
+					quickly. She is familiar with many emerging technologies for developing sophisticated
+					applications: in addition to her experience with Node, npm, and Backbone.js, she has
+					also used Browserify, Grunt, and Gulp and is studying Angular.js.
+				</p>
+				<p>
+					Lauren is a hard worker who loves being productive and exceeding the expectations
+					of her clients. She is happy working alone, but also thrives in the collaborative
+					environment of working in a team. She has worked with team members on previous
+					projects to pool experience and expertise, and she is a skilled mediator of conflict.
+				</p>
+				<p>
+					Lauren is a hard worker who loves being productive and exceeding the expectations
+					of her clients. She is happy working alone, but also thrives in the collaborative
+					environment of working in a team. She has worked with team members on previous
+					projects to pool experience and expertise, and she is a skilled mediator of conflict.
+				</p>
+			</section>
+		</section>
+
+		<section class="employment">
+			<h2>Employer History</h2>
+
+			<section class="ibm">
+				<h3>July 2014</h3>
+				<h4>IBM GBS, United States of America<br/>Application Development Specialist</h4>
+				<p>
+					Currently undergoing training in Salesforce and will be pursuing certification.
+					Enrolled in a Java development seminar with IBM.
+				</p>
+			</section>
+
+			<section class="cipafilter">
+				<h3>July 2011 - July 2014</h3>
+				<h4>Cipafilter, United States of America<br/>Software Developer</h4>
+				<ul>
+					<li>
+						Designed captive portal, including web interface and network interaction, to implement
+						transparent proxy support for existing authentication system
+					</li>
+					<li>
+						Coded extension of network access control system to accommodate VLAN trunking support
+					</li>
+					<li>
+						Optimized database structure for continuously logging traffic on networks passing up to 50
+						Mbps
+					</li>
+					<li>
+						Designed complete MVC JS/PHP single-page web application for reporting on network
+						traffic. Application included multiple report layouts, controls for time and filtering selection,
+						charts, tables, dynamically alterable navigation, and many other event-driven responsive
+						elements. This was implemented RESTfully using PSR-1 standard object-oriented PHP.
+						Implementation involved constructing a query markup language for more dynamic requests;
+						separation of concerns of output, template construction, and DB interaction; intensive query
+						and request optimization for dealing with tens of millions of rows; and packaging application
+						for npm.
+						<p class="technologies">
+							Technologies used: Node/npm, Backbone+Marionette, Highcharts, Handlebars, RequireJS,
+							less, PostgreSQL, PHP, Slim Framework, Make, Linux.
+						</p>
+					</li>
+					<li>
+						Designed functional framework for inventory management system. Was diverted from
+						project after structural components were complete.
+						<p class="technologies">
+							Technologies used: Browserify, Backbone, Underscore, Node/npm, PHP, Composer, Gulp,
+							Beefy, Less, Make, Linux.
+						</p>
+					</li>
+				</ul>
+			</section>
+		</section>
+
+		<section class="skills">
+			<h2>Key Skills</h2>
+			<section class="web-app-development">
+				<h3>Web Application Development</h3>
+				<ul>
+					<li>HTML5/CSS3</li>
+					<li>PHP: PDO, Twig, Slim, Composer, PSR-0/1 OOP</li>
+					<li>JavaScript Framework/APIs: jQuery + UI, Backbone + Marionette, Underscore, Handlebars, Highcharts, Datatables.</li>
+					<li>JS request paradigms: AJAX, REST, JSON</li>
+					<li>App packaging and development: make, browserify, require.js, gulp, beefy, less</li>
+					<li>Web console debugging: Chrome/Firefox dev consoles,  stack trace, debug step-through,
+						general Web API debug utilities (console.log, console.trace, console.profile, etc.),
+						breakpoints, etc.
+					</li>
+				</ul>
+			</section>
+
+			<section class="linux">
+				<h3>Linux/UNIX (Arch, Debian, Ubuntu)</h3>
+				<ul>
+					<li>sysadmin utilities: htop, user management (stat, chown, etc.), screen, ssh, disown, etc.</li>
+					<li>shell scripting: bash, zsh, sh, php</li>
+					<li>webservers: Apache, nginx</li>
+					<li>router and switch configuration: iptables, ebtables, ipsets, netstat, nmap, iproute2, ping,
+						arping, etc.
+					</li>
+					<li>advanced networking: VLAN, VPN (IPSec/PPTP), firewalls, SNMP, etc.</li>
+					<li>mail: mimedefang, sendmail, SpamAssassin</li>
+				</ul>
+			</section>
+
+			<section class="databases">
+				<h3>Databases</h3>
+				<ul>
+					<li>SQL: PostgreSQL, MySQL, SQLite</li>
+					<li>PostgreSQL query optimization: EXPLAIN, pg_stats, indexes, PL/pgSQL, Sphinx functions/procedures</li>
+					<li>pgsql DB extensions: C++, PHP, Linux CLI</li>
+					<li>pgsql admin utilities: pg_ctl, pg_dump, etc.</li>
+					<li>noSQL: mongodb</li>
+					<li>normalized design</li>
+				</ul>
+			</section>
+
+			<section class="dev-utils">
+				<h3>Development Utilities</h3>
+				<ul>
+					<li>IDEs: vim, Eclipse, CodeBlocks</li>
+					<li>documentation: doxygen, docco</li>
+					<li>VCSs: Git, Subversion (including merging, rebasing, branch structuring, hooks)</li>
+					<li>Ticketing systems: mantis, RT</li>
+					<li>VMs: VMWare, Virtualbox</li>
+				</ul>
+			</section>
+
+		</section>
+
+		<section class="training">
+			<h2>Key Courses and Training</h2>
+			<section class="courses">
+				<ul>
+					<li>Salesforce ADM 201</li>
+					<li>WD-150: Introduction to Object-Oriented Programming with Java Examples</li>
+					<li>WD-154: Java SE 6 Programming Fundamentals</li>
+					<li>GDC-01: Relational Database, HTML, and Javascript</li>
+					<li>XM-301: Introduction to XML and Related Technologies</li>
+					<li>RD-810: Servlet and JSP Development</li>
+					<li>Sterling: Participant Modeling and User Security</li>
+					<li>Sterling: Process Modeling</li>
+					<li>Sterling: Item and Pricing Configuration</li>
+					<li>Sterling: Inventory and Order Management Business Rules</li>
+					<li>Sterling: Extending the Application</li>
+				</ul>
+			</section>
+		</section>
+
+		<section class="education">
+			<h2>Education</h2>
+			<section class="qualifications">
+				<h3>Qualifications</h3>
+				<p>
+					Bachelor of Arts in English and American Literatures<br/>
+					Middlebury College, United States of America, 2010
+				</p>
+			</section>
+
+			<section class="languages">
+				<h3>Languages</h3>
+				<ul>
+					<li>English &mdash; <i>Fluent</i></li>
+					<li>Russian &mdash; <i>Basic</i></li>
+				</ul>
+		</section>
+
+	</body>
+</html>
