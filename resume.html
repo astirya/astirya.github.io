@@ -3,7 +3,7 @@
 	<head>
 		<title>Resume</title>
 		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
 		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 		<style>
 			body {
@@ -24,7 +24,7 @@
 				text-align: right;
 				font-size: 16pt;
 				margin-bottom: 3em;
-				color: #333;
+				color: #566;
 
 			}
 
@@ -37,53 +37,61 @@
 			header address {
 				font-style: normal;
 				font-size: 1em;
+				font-family: "Playfair Display";
 			}
 
 			header h1 {
-				background: 0% 30% url('http://amolife.com/image/images/stories/Animals/Cats/fluffy_cats_-(12).jpg');
+				/* background: 0% 30% url('http://amolife.com/image/images/stories/Animals/Cats/fluffy_cats_-(12).jpg'); */
+				background: 0% 70% #333 url('http://pixabay.com/static/uploads/photo/2011/12/14/12/28/ngc-2818-11126_640.jpg');
 				background-size: cover;
 				-webkit-background-clip: text;
 				background-clip: text;
 
 				text-shadow: none;
-				color: rgba(0,0,0,0.2);
+				color: rgba(0,0,0,0);
 				margin: 0;
 				padding: 0;
-				font-size: 4.5em;
+				font-size: 5em;
+				letter-spacing: 4pt;
 				word-spacing: 0.2em;
-				letter-spacing: 3pt;
 				text-transform: uppercase;
 			}
 			header p {
 				margin: 0;
 				padding: 0;
+				font-family: "Playfair Display";
 			}
 
 			body > section {
 				border-top: 1px solid #ccc;
 				margin-top: 1.5em;
 				padding-top: 1.5em;
+				font-family: "Playfair Display";
+				page-break-inside: avoid;
 			}
 			section h2 {
 				margin: 0;
-				font-size: 9pt;
-				text-transform: uppercase;
+				font-size: 1.4em;
 				width: 10%;
 				float: left;
-				font-size: 18pt;
+				text-transform: uppercase;
+				font-family: "Lato";
+				color: #829494;
+				text-shadow: 0.2pt 0.8pt 1pt #ddd;
 			}
 
 			section h3 {
 				margin: 0;
 				padding: 0;
-				font-size: 12pt;
+				font-size: 1.1em;
 				float: left;
 				width: 18%;
 				text-align: right;
 			}
-
-			section > section:nth-of-type(even) h3 { color: rgb(26, 219, 109); }
-			section > section:nth-of-type(odd) h3 { color: rgb(0, 169, 208); }
+			section > section h3 {
+				font-family: "Playfair Display";
+				color: #004579;
+			}
 
 			section h4 {
 				margin: 0.5em;
@@ -114,9 +122,10 @@
 			}
 
 			.technologies {
-				border-top: 1px solid rgb(26, 219, 109);
+				border-top: 1px solid #64a6da; /* #004579;*/
 				padding-top: 0.5em;
 				font-size: 80%;
+				color: #555;
 			}
 
 			.social {
@@ -128,7 +137,16 @@
 				padding: 0;
 				font-size: 20pt;
 				text-align: left;
-				color: #aaa;
+				color: #829494;
+			}
+
+			.social span {
+				display: none;
+			}
+
+			.social .fa {
+				-webkit-transition: color 250ms;
+				transition: color 500ms;
 			}
 
 			.fa-linkedin-square:hover { color: #007bb6; }
@@ -136,10 +154,30 @@
 			.fa-github-square:hover   { color: #829aa8; }
 			.fa-stack-overflow:hover   { color: #f09000; }
 
-			@media screen {
-				.social span { display: none; } /* hide full social uris */
-			}
+			@media print {
+				.technologies {
+					border-color: #eee !important;
+				}
+				h1 {
+					color: #000 !important;
+					font-size: 20pt;
+				}
 
+				h3 {
+					color: #555 !important;
+				}
+
+				.social {
+					font-size: 9pt;
+					position: relative;
+				}
+
+				.social span {
+					display: inline;
+				}
+
+				body { font-size: 8pt; }
+			}
 
 		</style>
 	</head>
@@ -162,7 +200,7 @@
 				<li>
 					<a href="https://github.com/astirya" title="Github">
 						<i class="fa fa-github-square"></i>
-						<span>https://github,com/astirya</span>
+						<span>https://github.com/astirya</span>
 					</a>
 				</li>
 				<li>
@@ -212,7 +250,7 @@
 		</section>
 
 		<section class="employment">
-			<h2>Employer History</h2>
+			<h2>Employment History</h2>
 
 			<section class="ibm">
 				<h3>July 2014</h3>
@@ -367,7 +405,7 @@
 
 				if (scrollY < innerHeight) {
 					window.requestAnimationFrame(function () {
-						var y = 35 - (scrollY / innerHeight * 60);
+						var y = 70 - (scrollY / innerHeight * 60);
 						header.setAttribute('style', 'background-position-y: ' + y + '%');
 					});
 				}
