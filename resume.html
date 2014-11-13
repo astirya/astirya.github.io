@@ -28,6 +28,12 @@
 
 			}
 
+			@media screen {
+				header {
+					margin-top: 10em;
+				}
+			}
+
 			header address {
 				font-style: normal;
 				font-size: 1em;
@@ -43,8 +49,9 @@
 				color: rgba(0,0,0,0.2);
 				margin: 0;
 				padding: 0;
-				font-size: 4em;
+				font-size: 4.5em;
 				word-spacing: 0.2em;
+				letter-spacing: 3pt;
 				text-transform: uppercase;
 			}
 			header p {
@@ -143,8 +150,7 @@
 			<p>
 				<a href="tel:+12253249955">225.324.9955</a>
 				&mdash;
-				<a 
-	   href="email:lauren.kelley.scott@gmail.com">lauren.kelley.scott@gmail.com</a>
+				<a href="email:lauren.kelley.scott@gmail.com">lauren.kelley.scott@gmail.com</a>
 			</p>
 			<ul class="social">
 				<li>
@@ -349,6 +355,24 @@
 					<li>Russian &mdash; <i>Basic</i></li>
 				</ul>
 		</section>
-
 	</body>
+	<script type="text/javascript">
+
+		(function () {
+			var header = document.getElementsByTagName('h1')[0];
+
+			window.onscroll = function () {
+				var scrollY = window.scrollY,
+					innerHeight = window.innerHeight;
+
+				if (scrollY < innerHeight) {
+					window.requestAnimationFrame(function () {
+						var y = 35 - (scrollY / innerHeight * 60);
+						header.setAttribute('style', 'background-position-y: ' + y + '%');
+					});
+				}
+			};
+		})();
+
+	</script>
 </html>
