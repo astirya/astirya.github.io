@@ -5,19 +5,6 @@
 		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
 		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-		<script type="text/javascript">
-			// from https://github.com/Modernizr/Modernizr/issues/89
-			Modernizr.addTest('backgroundclip', function () {
-				var div = document.createElement('div');
-
-				if('backgroundClip' in div.style) return true;
-
-				'Webkit Moz 0 ms Khtml'.replace(/([A-Za-z*]*/g, function (val) {
-					if (val+'BackgroundClip' in div.style) return true;
-				});
-			});
-		</script>
 		<style>
 			body {
 				font-family: 'Lato';
@@ -53,18 +40,15 @@
 				font-family: "Playfair Display";
 			}
 
-			.backgroundclip header h1 {
-				background: 0% 70% #003d4a
+			header h1 {
+				background: 0% 70% #333 
 					url('http://upload.wikimedia.org/wikipedia/commons/8/80/NGC_2818_by_the_Hubble_Space_Telescope.jpg');
 				background-size: cover;
 				-webkit-background-clip: text;
 				background-clip: text;
-				color: rgba(0,0,0,0);
-			}
 
-			header h1 {
-				color: #111;
 				text-shadow: none;
+				color: rgba(0,0,0,0);
 				margin: 0;
 				padding: 0;
 				font-size: 5em;
@@ -239,7 +223,7 @@
 			<h2>Profile</h2>
 			<section class="one">
 				<p>
-					Lauren is a motivated, experienced developer with years' expertise in creating
+					Lauren is a motivated, experienced developer with three years' expertise in creating
 					and maintaining embedded web applications on a Linux platform. She has many
 					years of hands-on Linux experience due to exclusively using command-line Linux on
 					her professional and personal computers. This experience has given her a wealth of
@@ -257,7 +241,7 @@
 					projects to pool experience and expertise, and she is a skilled mediator of conflict.
 				</p>
 				<p>
-					Above all, Lauren has a voracious appetite for acquiring technical mastery of cutting-edge
+					Above all, Lauren has a voracious appetite for acquiring technical master of cutting-edge
 					technology and constantly works to expand the limits of her expertise. Software
 					development is not her only job; it is also her joy. She is defined by her continuous
 					engagement with programming: she always takes home her drive to learn and to succeed.
