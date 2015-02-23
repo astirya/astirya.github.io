@@ -24,8 +24,7 @@
 				text-align: right;
 				font-size: 16pt;
 				margin-bottom: 3em;
-				color: #566;
-
+				color: #2B756C;
 			}
 
 			@media screen {
@@ -41,14 +40,14 @@
 			}
 
 			header h1 {
-				background: 0% 70% #333 
-					url('http://upload.wikimedia.org/wikipedia/commons/8/80/NGC_2818_by_the_Hubble_Space_Telescope.jpg');
-				background-size: cover;
+				color: #C9881E;
+				-webkit-text-fill-color: transparent;
+				background: 0% 70% -webkit-linear-gradient(transparent, transparent),
+					url('http://upload.wikimedia.org/wikipedia/commons/8/80/NGC_2818_by_the_Hubble_Space_Telescope.jpg') repeat;
+				background: -o-linear-gradient(transparent, transparent);
 				-webkit-background-clip: text;
-				background-clip: text;
 
 				text-shadow: none;
-				color: rgba(0,0,0,0);
 				margin: 0;
 				padding: 0;
 				font-size: 5em;
@@ -241,7 +240,7 @@
 					projects to pool experience and expertise, and she is a skilled mediator of conflict.
 				</p>
 				<p>
-					Above all, Lauren has a voracious appetite for acquiring technical master of cutting-edge
+					Above all, Lauren has a voracious appetite for acquiring technical mastery of cutting-edge
 					technology and constantly works to expand the limits of her expertise. Software
 					development is not her only job; it is also her joy. She is defined by her continuous
 					engagement with programming: she always takes home her drive to learn and to succeed.
@@ -255,9 +254,17 @@
 			<section class="ibm">
 				<h3>July 2014</h3>
 				<h4>IBM GBS, United States of America<br/>Application Development Specialist</h4>
-				<p>
-						Assigned to Java development role implementing customizations for Sterling OMS.
-				</p>
+				<ul>
+					<li>
+						Assigned to Javascript development role implementing customizations for Sterling OMS web store for Fortune 500 client.
+					</li>
+					<li>
+						Responsible for facilitating development work of and for training onshore team.
+					</li>
+					<li>
+						Quickly brought self up to speed in XML, JBoss, Oracle, and Sterling OMS and developed documentation on installation and configuration of latter three.
+					</li>
+				</ul>
 			</section>
 
 			<section class="cipafilter">
@@ -410,6 +417,8 @@
 					});
 				}
 			};
+
+			window.onscroll();
 		})();
 
 	</script>
